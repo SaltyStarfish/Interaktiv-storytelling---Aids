@@ -1,13 +1,13 @@
 
 
-* {
+* {/*reset css*/
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6{ /*ikke de rigtige skrifttyper endnu*/
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -23,9 +23,9 @@ body{
 
 .content-wrapper{
     margin-inline: auto; /*placerer content-wrapper i midten*/
-    margin-block: 25px; 
+    margin-block: 25px; /*adder lidt whitespace over og under*/
     width: 340px;
     background-color: #EEEAE5;
     display: flex;
-    padding-block: 25px;
+    padding-block: 25px; /*adder lidt whitespace i top og bund*/
 }

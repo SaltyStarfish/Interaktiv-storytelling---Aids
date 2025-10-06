@@ -1,11 +1,11 @@
 .content-wrapper{
-    align-items: center;
+    align-items: center; /*centrer indhold vandret*/
     flex-direction: column;
 }
 
 .cirkel{
     display: flex;
-    justify-content: center;
+    justify-content: center; /*centrerer ikonet*/
     align-items: center;
     height: 125px;
     width: 125px;
@@ -14,9 +14,23 @@
 }
 
 .question{
-    padding: 15px;
-    margin: 10px;
-    margin-top: 50px;
+    padding: 15px; /*adder whitespace inde i boxen*/
+    margin: 10px;/*adder whitespace rundt om boxen*/
+    margin-top: 50px;/*ekstra afstand mellem cirklen og boxen*/
     background-color: #FFFFFF;
     border-radius: 20px;
+}
+
+.question .cirkel{
+    background-color: #EEEAE5;
+    height: 35px;
+    width: 35px;
+}
+
+.svarmulighed{
+    display: flex;
+    padding: 15px; /*adder whitespace inde i boxen*/
+    margin: 10px;/*adder whitespace rundt om boxen*/
+    background-color: #FFFFFF;
+    border-radius: 50px;
 }
