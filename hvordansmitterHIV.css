@@ -25,15 +25,39 @@ h2, h3 {
   color: #444;
 }
 
-.ikoner {
-  display: flex;
-  justify-content: space-around;
-  margin: 1rem 0;
+.ikon img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0.5rem;
 }
 
 .ikon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  display: inline-block;
+}
+
+.ikon p {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 14px;
+  line-height: 1.2;
+  width: 80%;
+  margin: 0;
+}
+
+.ikoner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  margin: 1rem 0;
   text-align: center;
+}
+
+.ikon:nth-child(3) {
+  grid-column: 1 / span 2;
+  justify-self: center;
 }
