@@ -149,6 +149,10 @@ p{
     display: none;
 }
 
+#feedback a{
+    display: contents;
+}
+
 #fortsaet{
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
