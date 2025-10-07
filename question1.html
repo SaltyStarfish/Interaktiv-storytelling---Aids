@@ -3,32 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nokora:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/questions.css">
-    <script src="script.js" defer></script>
+    <script src="js/questions-script.js" defer></script>
     <title>Spørgsmål 1 | Aids | Epidemier | Steno Museet</title>
 </head>
 <body>
-    <div class="content-wrapper">
-        <div class="cirkel">
-            <img src="assets/questionmark.svg" alt="Spørgmålstegn">
-        </div>
-        <div class="question">
-            <h1>Spørgsmål 1:</h1>
-            <p>Forestil dig, du lever i Danmark i starten af 1980’erne og hører om de første tilfælde af AIDS. Hvordan bliver der reageret på denne nye sygdom?</p>
-        </div> 
-        <div class="svarmulighed svar-a">
-            <div class="cirkel">
-                <p>A</p>
+    <div class="baggrund">
+        <div class="flip-box">
+            <div id="flip-funktion" class="flip-box-indhold">
+                <div class="content-wrapper flip-box-forside">
+                    <div id="top-ikon" class="top-ikon cirkel">
+                        <img src="assets/questionmark.svg" alt="Spørgmålstegn">
+                    </div>
+                    <div class="question">
+                        <h1>Spørgsmål 1:</h1>
+                        <p>Forestil dig, du lever i Danmark i starten af 1980'erne og hører om de første tilfælde af AIDS. Hvordan bliver der reageret på denne nye sygdom?</p>
+                    </div> 
+                    <p>Vælg det rigtige svar:</p>
+                    <div id="rigtigt-svar" class="svarmulighed svar-a">
+                        <div class="cirkel">
+                            <p>A</p>
+                        </div>
+                        <p>På dette tidspunkt ved man meget lidt om sygdommen, og hvordan den smitter. Derfor er der stor usikkerhed, frygt og mange fordomme.</p>
+                    </div>
+                    <div id="forkert-svar" class="svarmulighed svar-b">
+                        <div class="cirkel">
+                            <p>B</p>
+                        </div>
+                        <p>Forskerne får hurtigt en god forståelse for AIDS, og den skaber derfor ikke frygt og fordomme i befolkningen.</p>
+                    </div>
+                    <div id="vis-info" class="cirkel mereinfo-ikon">
+                        <p>i</p>
+                    </div>
+                </div>
+                <div class="content-wrapper flip-box-bagside">
+                    <div class="top-ikon cirkel">
+                        <p>i</p>
+                    </div>
+                    <div class="question">
+                        <h1>Ledetråd:</h1>
+                        <p>De første tilfælde af AIDS i Danmark blev registreret i begyndelsen af 1980'erne. Dengang vidste man meget lidt om sygdommen, og der fandtes ingen behandling. <br><br> Mange døde kort tid efter diagnosen. AIDS blev især forbundet med homoseksuelle mænd og stofbrugere, hvilket skabte stor frygt og stigmatisering.</p>
+                    </div> 
+                    <div id="skjul-info" class="cirkel mereinfo-ikon">
+                        <p>↩</p>
+                    </div>
+                </div>
             </div>
-            <p>På dette tidspunkt ved man meget lidt om sygdommen, og hvordan den smitter. Derfor er der stor usikkerhed, frygt og mange fordomme.</p>
-        </div>
-        <div class="svarmulighed svar-b">
-            <div class="cirkel">
-                <p>B</p>
-            </div>
-            <p>Forskerne får hurtigt en god forståelse for AIDS, og den skaber derfor ikke frygt og fordomme i befolkningen.</p>
         </div>
     </div>
+
 </body>
 </html>

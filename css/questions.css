@@ -1,16 +1,74 @@
+.baggrund{
+    max-width: 390px; /*Tiltænkt skærmstørrelse: iphone 14 = 390px*/
+    margin-inline: auto; /*centrerer sitet, hvis det vises på en større skærm*/
+    background-image: url("../assets/baggrund.png");
+    padding: 25px;
+}
+
+.flip-box {
+    /* background-color: transparent; */
+    perspective: 1000px;
+}
+
+.flip-box-indhold{
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    min-height: 765px;
+}
+
 .content-wrapper{
-    align-items: center; /*centrer indhold vandret*/
+    display: flex;
+    align-items: center; /*centrerer indhold vandret*/
     flex-direction: column;
+    margin-block: 0;
+    /* background-color: #eeeae5;
+    min-height: 765px;
+    width:340px; */
+}
+
+/* .flip-box:hover .flip-box-indhold {
+    transform: rotateY(180deg);
+} */
+
+.flip-box-forside, .flip-box-bagside {
+    position: absolute;
+    /* width: 100%; */
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box-bagside {
+    transform: rotateY(-180deg);
+}
+
+h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 14px;
+    font-weight: light;
 }
 
 .cirkel{
     display: flex;
     justify-content: center; /*centrerer ikonet*/
     align-items: center;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.top-ikon{
+    background-color: #FFFFFF;
     height: 125px;
     width: 125px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
+}
+
+.top-ikon p{
+    font-size: 64px;
+    font-weight: bold;
 }
 
 .question{
@@ -21,16 +79,44 @@
     border-radius: 20px;
 }
 
-.question .cirkel{
+.svarmulighed{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px; /*adder whitespace inde i boxen*/
+    margin-inline: 10px;/*adder whitespace rundt om boxen*/
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.svarmulighed .cirkel{
     background-color: #EEEAE5;
     height: 35px;
     width: 35px;
 }
 
-.svarmulighed{
-    display: flex;
-    padding: 15px; /*adder whitespace inde i boxen*/
-    margin: 10px;/*adder whitespace rundt om boxen*/
-    background-color: #FFFFFF;
-    border-radius: 50px;
+.svar-a{
+    margin-top: 12px;
+}
+
+.svar-b{
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.mereinfo-ikon{
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 50px;
+    width: 50px;
+    color: #FFFFFF;
+    margin-right: 25px;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+.mereinfo-ikon p{
+    font-size: 32px;
 }
