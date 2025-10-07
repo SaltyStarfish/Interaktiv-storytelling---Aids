@@ -7,7 +7,7 @@ body {
     background-color: black;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 0;
 }
 
@@ -44,7 +44,7 @@ p {
    width: 390px;
   background-image: url('../assets/baggrund.png');
   background-repeat: repeat-y;
-  background-size: 100% 50%;  
+  background-size: 100% 33%;  
   background-position: top;
   z-index: 10;
 }
@@ -92,12 +92,26 @@ p {
     margin-top: 150px;
 }
 
+.fakta1 video,
+.fakta2 img {
+  width: 70%;          /* gør dem mindre */
+  max-width: 200px;    /* sæt evt. en max-grænse */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* centrer og giv lidt luft under */
+  border-radius: 8px;
+}
+
+.fakta2 img {
+  width: 55%;
+}
+
 #viste-du-at {
     position: relative;
     width: 100%;
     max-width: 390px;
     margin: 10px auto 0;
-    height:520px;
+    height:400px;
 }
 
 #viste-du-at img {
@@ -117,7 +131,7 @@ p {
 #lup {
     position: absolute;
     width: 120px;
-    right: 18px;
+    right: 15px;
     top: 70px;
 }
 
@@ -135,3 +149,36 @@ p {
     top: 260px;
 }
 
+#hide-show {
+    display: none;
+}
+
+#kend-forskellen {
+    display: block;
+    width: 100%;
+    max-width: 300px;  
+    margin: 24px auto 40px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+#en-af-tre{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+#en-af-tre h3{
+    padding-bottom: 50px;
+}
+
+.pil{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 30px 15px;
+}
