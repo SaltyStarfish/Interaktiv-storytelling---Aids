@@ -37,3 +37,22 @@ h2, h3 {
   align-items: center;
   text-align: center;
 }
+
+.ikon img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0.5rem;
+}
+
+.ikoner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  margin: 1rem 0;
+}
+
+.ikon:nth-child(3) {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
