@@ -1,0 +1,137 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+}
+
+.app-container {
+   width: 390px;
+  background-image: url('../assets/baggrund.png');
+  background-repeat: repeat-y;
+  background-size: 100% 50%;  
+  background-position: top;
+  z-index: 10;
+}
+
+#aids-symbol {
+    display: flex;
+    max-height: 100px;
+    margin-top: 50px;
+}
+
+#hiv-aids {
+    display: flex;
+    max-width: 350px;
+    justify-content: center;
+    margin: 50px auto 0; 
+}
+
+#hiv-aids img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fakta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 390px;
+    margin: 20px auto;
+    padding: 0 10px; 
+    }
+
+.fakta1, .fakta2 {
+    flex: 1; 
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    line-height: 1.5;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.fakta2 {
+    margin-top: 150px;
+}
+
+#viste-du-at {
+    position: relative;
+    width: 100%;
+    max-width: 390px;
+    margin: 10px auto 0;
+    height:520px;
+}
+
+#viste-du-at img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: absolute
+}
+
+#vda {
+    position: absolute;
+    width: 260px;
+    left: 8px;
+    top: 0px;
+}
+
+#lup {
+    position: absolute;
+    width: 120px;
+    right: 18px;
+    top: 70px;
+}
+
+#graf {
+    position: absolute;
+    width: 100px;
+    right: 32px;
+    top: 220px;
+}
+
+#globus {
+    position: absolute;
+    width: 100px;
+    left: 110px;
+    top: 260px;
+}
+
