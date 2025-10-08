@@ -2,12 +2,10 @@ body {
   background: url('assets/baggrund.png');
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0 auto;
   padding: 1rem;
   width: 390px;        
   display: flex;
   justify-content: center;
-  align-items: flex-start;
 }
 
 .container {
@@ -58,6 +56,12 @@ h2 {
   left: 50%;
 }
 
+.smitter .ikon .popup p {
+  top: 50%;
+  left: 50%;
+  text-align: left;
+}
+
 .blob {
   position: relative;
   text-align: center;
@@ -86,9 +90,15 @@ h2 {
   width: 80%;
 }
 
-.smitter-ikke p {
+.smitter-ikke .ikon p {
   top: 22%;
   left: 40%;
+}
+
+.smitter-ikke .ikon .popup p {
+  top: 50%;
+  left: 50%;
+  text-align: left;
 }
 
 .ikoner {
@@ -112,12 +122,18 @@ h2 {
 }
 
 .popup {
-  transform: translate(-50%, -100%);
+  display: none;
+  position: absolute;
+  transform: translate(-50%);
   background: #fff;
   border-radius: 12px;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   width: auto;
   max-width: 80%;
+  min-width: 200px;
+  min-height: 120px;
+  top: 10%;
+  left: 50%;
   box-sizing: border-box;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   z-index: 10;
@@ -133,18 +149,10 @@ h2 {
   right: 8px;
   background: none; 
   border: none; 
-  font-size: 1.2rem; 
   cursor: pointer;
 }
 
-.popup {
-    display: none;
-    min-width: 280px;
-    min-height: 120px;
-    position: relative;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-
+.popup p {
+  margin-top: 0;  /* Remove any default top margin */
+  padding-top: 0;  /* Remove padding if necessary */
+}
