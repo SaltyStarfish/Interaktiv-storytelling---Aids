@@ -19,7 +19,7 @@ h1{
   width: 390px;
   background-image: url('../assets/baggrund.png');
   background-repeat: repeat-y;
-  background-size: cover;  
+  background-size: contain;  
   background-position: top;
   margin: 0 auto;
   display: flex;
@@ -35,16 +35,26 @@ h1{
 
 .fakta {
     color: white;
-    width: 80%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.fakta.venstre {
+  width: 210px;
+  align-self: flex-start;
+  margin-left: 20px;
+}
+
+.fakta.hoejre {
+  width: 210px;
+  align-self: flex-end;
+  margin-right: 20px;
 }
 
 .infovideo {
   width: 100%;
   max-width: 390px;
-  max-height: 230px;
+  height: auto;
   object-fit: cover;
-  border-radius: 12px;
   margin-top: 15px;
   display: block;
 }
@@ -52,6 +62,6 @@ h1{
 .pil{
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     padding: 20px 15px 40px 15px;
 }
