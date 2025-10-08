@@ -1,8 +1,8 @@
-
-
-body {
+html{
     margin: 0;
     padding: 0;
+}
+body {
     display: flex;
     justify-content: center; /* vandret */
     align-items: center;     /* lodret */
@@ -47,7 +47,7 @@ body {
     font-size: 30px;
     margin-bottom: 10px;
     font-weight: 700;
-    font-family:Montserrat, Helvetica, sans-serif; /* ikke den rigtige skrifttype endnu*/
+    font-family:"Nokora", Arial, Helvetica, sans-serif;
 }
 .tekst p {
     font-size: 20px;
@@ -75,7 +75,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     margin: 8px auto;
-    font-family: Arial, Helvetica, sans-serif; /* ikke den rigtige skrifttype endnu*/
+    font-family:"Nokora", Arial, Helvetica, sans-serif;
     text-align: center;
     text-decoration: none;
     cursor: pointer;

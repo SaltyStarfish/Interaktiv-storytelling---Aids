@@ -58,7 +58,7 @@ body{
 }
 
 .info-box h3 {
-    font-family: Montserrat, Helvetica, sans-serif; /* ikke den rigtige skrifttype endnu*/
+    font-family:"Nokora", Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: black;
     font-weight: 600;
@@ -66,7 +66,7 @@ body{
 
   .info-box img {
     display: block;
-    margin: 0 auto 10px auto; /* Centrerer billedet og giver luft under det */
+    margin: 0 auto 10px auto; 
     height: 65px;
     width: 100px;
     background-color: #FFFFFF;
@@ -120,8 +120,8 @@ body{
   color: #BF232D; 
   justify-content: flex-start; 
   padding-left: 5px;   
-  position: relative;  /* Gør det muligt at absolut-positionere ikonet */
-  font-family: Montserrat, Helvetica, sans-serif;  /* ikke den rigtige skrifttype endnu*/              
+  position: relative;  
+  font-family:"Nokora", Arial, Helvetica, sans-serif;             
 }
 
 .flip-card-back {
@@ -151,4 +151,11 @@ body{
     width: 15px;    
     margin-top: 10px;
     cursor: pointer; /* viser at ikonet kan klikkes */
+}
+
+.pil{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px 5px 15px;
+  width: 100%;
 }
