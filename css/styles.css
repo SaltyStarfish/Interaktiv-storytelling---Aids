@@ -22,12 +22,3 @@ body{
     background-image: url("../assets/baggrund.png");
     padding: 25px;
 }
-
-.content-wrapper{
-    margin-inline: auto; /*placerer content-wrapper i midten*/
-    margin-block: 25px; /*adder lidt whitespace over og under*/
-    width: 340px;
-    background-color: #EEEAE5;
-    display: flex;
-    padding-block: 25px; /*adder lidt whitespace i top og bund*/
-}
