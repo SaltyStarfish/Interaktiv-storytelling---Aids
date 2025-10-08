@@ -1,0 +1,71 @@
+
+
+* {/*reset css*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{ /*ikke de rigtige skrifttyper endnu*/
+    font-family:Arial, Helvetica, sans-serif; /* ikke den rigtige skrifttype endnu*/
+    font-size: 50px;
+    font-weight: 700; 
+    color:white;
+    margin-bottom: 40px; /*giver lidt luft under overskriften*/
+    margin-top: 30px; /*giver lidt luft over overskriften*/
+    text-align: center; /*centrerer overskriften*/
+}
+
+h2{
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 18px;
+    color:white;
+    font-weight: 600;
+    margin-bottom: 10px; /*giver lidt luft under overskriften*/
+    margin-top: 80px; /*giver lidt luft over overskriften*/
+    padding-left: 20px; /*giver lidt luft til venstre for teksten*/
+}
+.intro p{
+    margin-bottom: 25px; /*giver lidt luft under teksten*/
+}
+
+
+
+p{
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 15px;
+    color:white;
+    font-weight: 300;
+    padding-left: 20px; /*giver lidt luft til venstre for teksten*/
+    line-height: 1.5; 
+}
+
+a.start-btn {
+    display: flex; /*gør knappen til et blok-element, så margin auto virker*/
+    justify-content: center; /*centrerer teksten i knappen*/
+    align-items: center; /*centrerer teksten i knappen*/
+    margin: 30px auto; /*centrerer knappen*/
+    width: 200px;
+    height: 150px;
+    background-color: #E2231A; 
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;/* ændrer musemarkøren til en hånd */
+    font-family: Montserrat, Helvetica, sans-serif;
+    text-decoration: none; /*fjerner understregning på link*/
+    margin-top: 70px; /*giver lidt luft over knappen*/
+    margin-bottom: 50px; /*giver lidt luft under knappen*/
+  }
+  
+
+body{
+    width: 390px; /*Tiltænkt skærmstørrelse: iphone 14 = 390px*/
+    background-image: url('../assets/baggrund.png'); /* Sti til billedet */
+    background-color: black; 
+    background-position: center; /* Centrerer billedet */
+    background-repeat: no-repeat; /* Forhindrer gentagelse af billedet */
+    margin-inline: auto; /* Centrerer sitet, hvis det vises på en større skærm */
+}
+

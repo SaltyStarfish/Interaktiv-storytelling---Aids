@@ -1,0 +1,154 @@
+* {/*reset css*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 390px; /*Tiltænkt skærmstørrelse: iphone 14 = 390px*/
+    background-image: url('../assets/baggrund.png'); /* Sti til billedet */
+    background-color: black; 
+    background-position: center; /* Centrerer billedet */
+    background-repeat: no-repeat; /* Forhindrer gentagelse af billedet */
+    margin-inline: auto; /* Centrerer sitet, hvis det vises på en større skærm */
+}
+.page {
+    display: flex; /* Gør det til en Flexbox-container */
+    flex-direction: column; /* Arrangerer børnene lodret */
+    justify-content: flex-start; /* Placerer indholdet øverst */
+    align-items: center; /* Centrerer børnene vandret */
+    width: 80%;
+    max-width: 300px;
+    background: #EEEAE5;
+    padding: 20px;
+    min-height: 100vh; /* Sikrer at siden fylder hele højden af viewporten */
+    margin: 40px auto; /* Kombinerer top/bund margin og centering */
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif; /* ikke den rigtige skrifttype endnu*/
+    margin-bottom: 5px; 
+  }
+  
+  .info-grid {
+    display: grid; /* Aktiverer CSS Grid */
+    grid-template-columns: 1fr 1fr; /* to kolonner */
+    margin-top: 15px; /* Giver lidt luft mellem h1 og info-grid */
+    gap: 20px; /* Styrer både rækkeafstand og kolonneafstand */
+    margin-bottom: 20px; 
+}
+  .info-box:first-child {
+    grid-column: 1 / -1; /* strækker sig over begge kolonner */
+  }
+
+  .info-box  {
+    text-align: center; /* Centrerer teksten og billedet */
+    display: flex; /* Gør det til en Flexbox-container */
+    flex-direction: column; /* Arrangerer børnene lodret */
+    align-items: center; /* Centrerer børnene vandret */
+  }
+
+  .info-box p {
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.info-box h3 {
+    font-family: Montserrat, Helvetica, sans-serif; /* ikke den rigtige skrifttype endnu*/
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+}
+
+  .info-box img {
+    display: block;
+    margin: 0 auto 10px auto; /* Centrerer billedet og giver luft under det */
+    height: 65px;
+    width: 100px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+.chart img {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 170px;
+}
+
+/* Container til alle kort */
+.card-container {
+  display: flex; /* Læg kortene på række */
+  gap: 10px;            
+  flex-wrap: wrap;   /* Gør at de hopper ned på næste linje, hvis der ikke er plads */
+  margin-top: 5px; /* Giver lidt luft over containeren */
+}
+.flip-card {
+  width: 250px;                  
+  height: 110px;                
+  perspective: 1000px; /* Afstand til "kameraet" → styrer 3D-effekten */
+}
+
+.flip-card-inner {
+  position: relative;        
+  width: 100%;                   
+  height: 100%;                             
+  transition: transform 0.6s;    /* Giver en glidende effekt, når der roteres */
+  transform-style: preserve-3d;  /* Sørger for at børneelementerne gengives i 3D-rum */
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);    /* Når .flip-card har klassen "flipped",roteres indholdet 180 grader rundt om Y-aksen */                               
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.flip-card-front {
+  background-color: black;  
+  color: #BF232D; 
+  justify-content: flex-start; 
+  padding-left: 5px;   
+  position: relative;  /* Gør det muligt at absolut-positionere ikonet */
+  font-family: Montserrat, Helvetica, sans-serif;  /* ikke den rigtige skrifttype endnu*/              
+}
+
+.flip-card-back {
+  background-color: white;       
+  color: black; 
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 13px; 
+  font-weight: 700;        
+  transform: rotateY(180deg); /* Bagsiden vendes 180 grader,så den bliver "bagsiden" af kortet */
+  justify-content: center;   
+  flex-direction: column;    
+  text-align: center;
+}
+.flip-icon {
+  position: absolute;  
+  bottom: 5px;   
+  right: 5px;    
+  width: 25px;    
+  height: auto;   
+  cursor: pointer; /* viser at ikonet kan klikkes */
+}
+
+.lukke-icon {
+    position: absolute;  
+    top: 5px;   
+    right: 15px;    
+    width: 15px;    
+    margin-top: 10px;
+    cursor: pointer; /* viser at ikonet kan klikkes */
+}
