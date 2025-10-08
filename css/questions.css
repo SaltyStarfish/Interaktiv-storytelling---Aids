@@ -1,10 +1,3 @@
-.baggrund{
-    max-width: 390px; /*Tiltænkt skærmstørrelse: iphone 14 = 390px*/
-    margin-inline: auto; /*centrerer sitet, hvis det vises på en større skærm*/
-    background-image: url("../assets/baggrund.png");
-    padding: 25px;
-}
-
 .flip-box {
     /* background-color: transparent; */
     perspective: 1000px;
@@ -17,14 +10,17 @@
 }
 
 .content-wrapper{
+    margin-inline: auto; /*placerer content-wrapper i midten*/
+    margin-block: 0; /*adder lidt whitespace over og under*/
+    width: 340px;
+    min-height: 765px;
+    background-color: #EEEAE5;
     display: flex;
+    padding-block: 25px; /*adder lidt whitespace i top og bund*/
     align-items: center; /*centrerer indhold vandret*/
     flex-direction: column;
-    margin-block: 0;
-    /* background-color: #eeeae5;
-    min-height: 765px;
-    width:340px; */
 }
+
 
 /* .flip-box:hover .flip-box-indhold {
     transform: rotateY(180deg);
@@ -50,6 +46,7 @@ h1, h2, h3{
 p{
     font-size: 14px;
     font-weight: light;
+    line-height: 1.5;
 }
 
 .cirkel{

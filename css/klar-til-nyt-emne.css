@@ -1,0 +1,254 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+}
+
+
+/*content*/
+
+#content-container{
+    width: 340px;                
+    margin: 0 auto;
+    background: #EEEAE5;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    gap: 12px;
+    justify-items: center;
+    place-content: center; 
+    padding: 25px 0px;
+    min-height: 100vh;
+}
+
+#faq-images{
+  width: 125px; 
+  height: 125px; 
+  object-fit: contain;
+  display: block; 
+  margin: 0 auto;
+}
+
+#ktne-h1{
+  margin: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+#ktne-p{
+  margin: 0;
+  max-width: 280px;
+  text-align: center;
+}
+
+.card{
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  height: 300px;
+  background: #B8B2B2;
+  border-radius: 20px;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  margin: 100px 0; 
+  padding: 90px 16px 16px;   
+}
+
+
+.card-image{
+    position: absolute;
+  top: -75px;              
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px; height: 100px;
+  display: grid; place-items: center;
+  z-index: 2;
+}
+.card-image img{
+  width: 100%; height: 100%;
+  object-fit: contain; display: block;
+}
+
+
+.card-title{
+ margin: 8px 0 8px;
+}
+
+.card-description{
+   margin: 0 8px 16px;
+  max-width: 240px;
+}
+
+
+.card-button{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: grid;
+    place-items: center;
+    height: 50px;
+    color: #FFFFFF;
+    border-radius: 50px;
+    margin-top: auto;
+    font-size: 14px;
+    font-weight: bold;
+    width: 85%;
+}
+
+/*karusel*/
+
+.carousel {
+    width: 340px;             
+    margin: 0 auto;
+}
+
+.track {
+   display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: 16px;
+  justify-items: center;          /* centrér kortet i sin “slide” */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px 0 24px; 
+}
+
+/* skjul scrollbar pænt */
+.track::-webkit-scrollbar { display: none; }
+.track { scrollbar-width: none; }
+
+
+
+
+
+
+
+
+
+/*content*/
+/*
+#content-container {
+    position: relative;
+    background-color: #EEEAE5;
+    width: 340px;
+    height: 100vh;
+    padding: 0px;
+    margin: 25px auto;     
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: grid;
+    place-items: center;
+    align-items: center; 
+    justify-content: flex-start;
+}
+
+
+#faq-images{
+    display: block;
+    width: 125px; 
+    height: 125px; 
+    margin: 0 auto;
+    margin-bottom: -20px;
+}
+
+
+
+.card {
+    position: relative;
+    scroll-snap-align: center;
+    background: #B8B2B2;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.2);
+    height: 350px;  
+    width: 300px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 0px 0px 0px 3px;
+    padding-top: 0px;
+}
+
+.card-image img {
+    position: absolute;
+    top: -50px;             
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    text-align: center;
+    margin: 0 20px 10px 20px;
+}
+
+.card-description{
+    text-align: center;
+    margin: 0 20px 20px 20px;
+    
+}
+
+.card-button{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: #FFFFFF;
+    border-radius: 50px;
+    margin-top: auto;
+    font-size: 14px;
+    font-weight: bold;
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel {
+    width: 390px;             
+    margin: 0 auto;
+}
+
+.track {
+    display: grid;
+    grid-auto-flow: column;      
+    grid-auto-columns: 100%;     
+    gap: 16px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 16px 16px 24px;
+}
+*/
+
+/* skjul scrollbar pænt */
+/*
+.track::-webkit-scrollbar { display: none; }
+.track { scrollbar-width: none; }
+*/

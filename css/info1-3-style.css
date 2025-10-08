@@ -49,6 +49,8 @@ p {
     z-index: 10;
 }
 
+/*content*/
+
 /* kortet venstre */
 .infoboks-venstre{
     position: relative;
