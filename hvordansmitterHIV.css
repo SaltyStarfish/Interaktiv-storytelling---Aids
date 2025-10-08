@@ -104,3 +104,47 @@ h2 {
   grid-column: 1 / span 2;
   justify-self: center;
 }
+
+.ikon { 
+  position: relative; 
+  display: inline-block; 
+  cursor: pointer; 
+}
+
+.popup {
+  transform: translate(-50%, -100%);
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  width: auto;
+  max-width: 80%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.popup.active { 
+  display: block; 
+}
+
+.popup .luk {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: none; 
+  border: none; 
+  font-size: 1.2rem; 
+  cursor: pointer;
+}
+
+.popup {
+    display: none;
+    min-width: 280px;
+    min-height: 120px;
+    position: relative;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
