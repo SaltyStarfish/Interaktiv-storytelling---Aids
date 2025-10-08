@@ -4,8 +4,8 @@ html{
 }
 body {
     display: flex;
-    justify-content: center; /* vandret */
-    align-items: center;     /* lodret */
+    justify-content: center; 
+    align-items: center;     
     width: 390px; /*Tiltænkt skærmstørrelse: iphone 14 = 390px*/
     height: 100vh;     /* Fylder hele højden af viewporten */
     background-image: url('../assets/baggrund.png'); /* Sti til billedet */
@@ -15,7 +15,6 @@ body {
     margin-inline: auto; /* Centrerer sitet, hvis det vises på en større skærm */
 }
 
-/* Scorekortet */
 .score-card {
     background: #EEEAE5;
     border-radius: 20px;
@@ -25,7 +24,6 @@ body {
     width: 80%;
 }
 
-/* Cirkel bag billedet */
 .score-icon {
     background: white;
     border-radius: 50%;
@@ -42,7 +40,6 @@ body {
     height: 120px;
 }
 
-/* Tekst */
 .tekst h2 {
     font-size: 30px;
     margin-bottom: 10px;
@@ -52,7 +49,7 @@ body {
 .tekst p {
     font-size: 20px;
     margin-bottom: 10px;
-    font-family: Montserrat, Helvetica, sans-serif;
+    font-family: "Montserrat", Helvetica, sans-serif;
     font-weight: 400;
 }
 
@@ -60,7 +57,7 @@ body {
     font-size: 30px;
     font-weight: 700;
     color: #205738;
-    font-family: Montserrat, Helvetica, sans-serif;
+    font-family: "Montserrat", Helvetica, sans-serif;
     margin-top: 5px; 
     margin-bottom: 35px;
 }

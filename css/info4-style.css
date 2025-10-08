@@ -152,7 +152,7 @@ p{
 .programmerede-piller-groen .pille-1{
     position: relative;
     left: 10px;
-    top: 70px;
+    top: 80px;
     rotate: -5deg;
     transform: scale(1.1);
 }
@@ -160,15 +160,23 @@ p{
 .programmerede-piller-groen .pille-2{
     position: relative;
     left: 30px;
-    top: 130px;
+    top: 150px;
     rotate: 20deg;
     transform: scale(1.5);
 }
 
 .programmerede-piller-groen .pille-3{
     position: relative;
-    right: 90px;
-    top: 150px;
+    right: 80px;
+    top: 210px;
     rotate: 250deg;
     transform: scale(0.9);
+}
+
+/* -----gå videre-pile------ */
+.pil{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
