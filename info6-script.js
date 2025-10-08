@@ -1,15 +1,18 @@
 //info6.html//
 
 //viste du at//
+if (document.getElementById("vda")) {
+
 document.getElementById("vda").onclick = myFunction;
 
 function myFunction() {
   var x = document.getElementById("hide-show");
-  if (x.style.display === "none") {
+  if (x.style.display === "") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
+}
 }
 
 
@@ -40,3 +43,5 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('touchstart', enableAudio, true);
   window.addEventListener('keydown', enableAudio, true);
 });
+
+
