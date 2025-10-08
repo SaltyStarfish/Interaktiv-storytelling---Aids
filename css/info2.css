@@ -151,3 +151,9 @@ h2 {
   border: none; 
   cursor: pointer;
 }
+
+.pil{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px 40px 15px;
+}
