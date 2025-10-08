@@ -94,11 +94,11 @@ p {
 
 .fakta1 video,
 .fakta2 img {
-  width: 70%;          /* gør dem mindre */
-  max-width: 200px;    /* sæt evt. en max-grænse */
+  width: 70%;          
+  max-width: 200px;   
   height: auto;
   display: block;
-  margin: 0 auto 10px; /* centrer og giv lidt luft under */
+  margin: 0 auto 10px; 
   border-radius: 8px;
 }
 
@@ -180,5 +180,5 @@ p {
 .pil{
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px 30px 15px;
+    padding: 20px 15px 40px 15px;
 }
