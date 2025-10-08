@@ -14,3 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('touchstart', enableAudio, true);
   window.addEventListener('keydown', enableAudio, true);
 });
+
+// Medicinflaske
+
+window.addEventListener("scroll", () => {
+  const medicinContainer = document.querySelector(".medicin-container");
+  const rect = medicinContainer.getBoundingClientRect();
+
+   // Flasken vælter første gang
+  if (rect.top < window.innerHeight * 0.8 && !medicinContainer.classList.contains("active")) {
+    medicinContainer.classList.add("active");
+
+    // Flasken vælter for anden gang
+    setTimeout(() => {
+      medicinContainer.classList.add("phase2");
+    }, 2500);
+  }
+});

@@ -59,9 +59,75 @@ h1{
   display: block;
 }
 
-.pil{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px 15px 40px 15px;
+.medicin-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+}
+
+#medicinflaske {
+  width: 100%;
+  transform-origin: bottom center;
+  transition: transform 1.5s ease-out;
+}
+
+/* flaske vælter til venstre */
+.medicin-container.active #medicinflaske {
+  transform: rotate(-90deg);
+}
+
+/* flaske vælter igen, nu på hovedet */
+.medicin-container.phase2 #medicinflaske {
+  transform: rotate(-180deg);
+}
+
+.pille {
+  position: absolute;
+  width: 20px;
+  top: 12px;
+  opacity: 0;
+  transform: rotate(0deg);
+}
+
+/* Første hold piller (aktiveres ved . active) */
+.medicin-container.active .pille:not(.senere) {
+  animation: pillerUd1 1.5s ease-out forwards;
+}
+
+/* Andet hold piller (aktiveres ved .phase2) */
+.medicin-container.phase2 .pille.senere {
+  animation: pillerUd2 1.5s ease-out forwards;
+}
+
+@keyframes pillerUd1 {
+  0% { opacity: 0; transform: translate(0,0) rotate(0deg); }
+  15% { opacity: 1; }
+  100% { transform: translate(-60px, 60px) rotate(120deg); opacity: 1; }
+}
+
+@keyframes pillerUd2 {
+  0% { opacity: 0; transform: translate(0,0) rotate(0deg); }
+  15% { opacity: 1; }
+  100% { transform: translate(60px, 80px) rotate(-100deg); opacity: 1; }
+}
+
+/* Variation i piller */
+#pille1 { left: 60px; animation-delay: 0.20s; transform: rotate(8deg); }
+#pille2 { left: 70px; animation-delay: 0.35s; transform: rotate(-12deg); }
+#pille3 { left: 80px; animation-delay: 0.50s; transform: rotate(18deg); }
+#pille4 { left: 90px; animation-delay: 0.65s; transform: rotate(-6deg); }
+#pille5 { left:100px; animation-delay: 0.80s; transform: rotate(6deg); }
+
+#pille6 { left: 55px; animation-delay: 0.20s; transform: rotate(10deg); }
+#pille7 { left: 65px; animation-delay: 0.35s; transform: rotate(-8deg); }
+#pille8 { left: 75px; animation-delay: 0.50s; transform: rotate(15deg); }
+#pille9 { left: 85px; animation-delay: 0.65s; transform: rotate(-10deg); }
+#pille10{ left: 95px; animation-delay: 0.80s; transform: rotate(12deg); }
+
+.pil {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 15px 40px 15px;
 }
