@@ -2,12 +2,10 @@ body {
   background: url('assets/baggrund.png');
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0 auto;
   padding: 1rem;
   width: 390px;        
   display: flex;
   justify-content: center;
-  align-items: flex-start;
 }
 
 .container {
@@ -39,6 +37,7 @@ h2 {
 .ikon {
   position: relative;
   display: inline-block;
+  margin-bottom: 0.5rem;
 }
 
 .ikon p {
@@ -58,10 +57,16 @@ h2 {
   left: 50%;
 }
 
+.smitter .ikon .popup p {
+  top: 50%;
+  left: 50%;
+  text-align: left;
+}
+
 .blob {
   position: relative;
   text-align: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .blob h2,
@@ -86,9 +91,15 @@ h2 {
   width: 80%;
 }
 
-.smitter-ikke p {
+.smitter-ikke .ikon p {
   top: 22%;
   left: 40%;
+}
+
+.smitter-ikke .ikon .popup p {
+  top: 50%;
+  left: 50%;
+  text-align: left;
 }
 
 .ikoner {
@@ -96,11 +107,47 @@ h2 {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   justify-items: center;
-  margin: 1rem 0;
+  margin: 1rem;
   text-align: center;
 }
 
 .ikon:nth-child(3) {
   grid-column: 1 / span 2;
   justify-self: center;
+}
+
+.ikon { 
+  position: relative; 
+  display: inline-block; 
+  cursor: pointer; 
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  transform: translate(-50%);
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.8rem 1.5rem;
+  width: auto;
+  max-width: 80%;
+  min-width: 150px;
+  min-height: 140px;
+  top: 10%;
+  left: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.popup.active { 
+  display: block; 
+}
+
+.popup .luk {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: none; 
+  border: none; 
+  cursor: pointer;
 }
