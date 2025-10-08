@@ -1,0 +1,11 @@
+* {/*reset css*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 390px; /*Tiltænkt skærmstørrelse: iphone 14 = 390px*/
+    background-color: black; 
+    background-position: center; /* Centrerer billedet */
+    margin-inline: auto; /* Centrerer sitet, hvis det vises på en større skærm */
+}
