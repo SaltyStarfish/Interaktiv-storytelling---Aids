@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.removeEventListener('pointerdown', enableAudio, true);
     window.removeEventListener('touchstart', enableAudio, true);
     window.removeEventListener('keydown', enableAudio, true);
-  };
+  }; 
 
   // aktiver lyd ved første klik, tryk eller tast
   window.addEventListener('pointerdown', enableAudio, true);

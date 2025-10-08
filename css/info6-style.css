@@ -49,6 +49,9 @@ p {
   z-index: 10;
 }
 
+
+/*content*/
+
 #aids-symbol {
     display: flex;
     max-height: 100px;
