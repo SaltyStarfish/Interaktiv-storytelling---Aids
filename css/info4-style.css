@@ -1,0 +1,182 @@
+.content-wrapper{
+    margin-inline: auto; /*placerer content-wrapper i midten*/
+    margin-block: 0; /*adder lidt whitespace over og under*/
+    width: 340px;
+    min-height: 765px;
+    background-color: #EEEAE5;
+    padding: 25px; /*adder lidt whitespace helevejen rundt*/
+    align-items: center; /*centrerer indhold vandret*/
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 20px;
+}
+
+p{
+    font-size: 14px;
+    line-height: 1.5;
+    z-index: 1;
+}
+
+.afsnit1{
+    margin-top: 20px;
+}
+
+.afsnit2{
+    margin-top: 30px;
+}
+
+.afsnit3{
+    margin-top: 60px;
+}
+
+.afsnit4{
+    margin-top: 60px;
+}
+
+.afsnit5{
+    margin-top: 60px;
+}
+
+
+.flex-row video{
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.flex-row{
+    display:flex;
+    flex-direction: row;
+}
+
+.programmerede-piller{
+    display: flex;
+    flex-direction: column;
+}
+
+.programmerede-piller p{
+    font-size: 7px;
+}
+
+.pille-1, .pille-2, .pille-3{
+    aspect-ratio: 9/4;
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    border: solid rgba(0, 0, 0, 0.7) 1px;
+    border-collapse: collapse;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.farvet-ende, .hvid-ende{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.farvet-ende{
+    border-right: solid rgba(0, 0, 0, 0.7) 1px;
+}
+
+.programmerede-piller-pink .farvet-ende{
+    background-color: #FFC7C2;
+}
+
+.programmerede-piller-roed .farvet-ende{
+    background-color: #E2231A;
+    color: white;
+}
+
+.programmerede-piller-groen .farvet-ende{
+    background-color: #008C61;
+    color: white;
+}
+
+.programmerede-piller .hvid-ende{
+    background-color: white;
+}
+
+
+/* -----------------placering af de enkelte piller------------------------- */
+.programmerede-piller-pink .pille-1{
+    position: relative;
+    left: 80px;
+    bottom: 50px;
+    rotate: 60deg;
+    transform: scale(0.9);
+}
+
+.programmerede-piller-pink .pille-2{
+    position: relative;
+    bottom: 30px;
+    rotate: 20deg;
+    transform: scale(1.3);
+}
+
+.programmerede-piller-pink .pille-3{
+    position: relative;
+    left: 40px;
+    top: 30px;
+    rotate: 170deg;
+    transform: scale(0.9);
+}
+
+.programmerede-piller-roed .pille-1{
+    position: relative;
+    right: 10px;
+    top: 50px;
+    rotate: 40deg;
+    transform: scale(0.7);
+}
+
+.programmerede-piller-roed .pille-2{
+    position: relative;
+    right: 80px;
+    top: 70px;
+    rotate: 170deg;
+    transform: scale(1);
+}
+
+.programmerede-piller-roed .pille-3{
+    position: relative;
+    right: 30px;
+    top: 100px;
+    rotate: 140deg;
+    transform: scale(0.9);
+}
+
+.programmerede-piller-groen .pille-1{
+    position: relative;
+    left: 10px;
+    top: 80px;
+    rotate: -5deg;
+    transform: scale(1.1);
+}
+
+.programmerede-piller-groen .pille-2{
+    position: relative;
+    left: 30px;
+    top: 150px;
+    rotate: 20deg;
+    transform: scale(1.5);
+}
+
+.programmerede-piller-groen .pille-3{
+    position: relative;
+    right: 80px;
+    top: 210px;
+    rotate: 250deg;
+    transform: scale(0.9);
+}
+
+/* -----gå videre-pile------ */
+.pil{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
