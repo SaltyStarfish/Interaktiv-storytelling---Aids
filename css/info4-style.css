@@ -61,7 +61,7 @@ p{
     font-size: 7px;
 }
 
-.pille-1, .pille-2, .pille-3{
+.pille{
     aspect-ratio: 9/4;
     display: flex;
     flex-direction: row;
@@ -70,6 +70,7 @@ p{
     border-collapse: collapse;
     border-radius: 50px;
     overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .farvet-ende, .hvid-ende{
@@ -102,22 +103,24 @@ p{
 
 
 /* -----------------placering af de enkelte piller------------------------- */
-.programmerede-piller-pink .pille-1{
+#pille-1{
     position: relative;
+    left: -500px;
     left: 80px;
     bottom: 50px;
     rotate: 60deg;
     transform: scale(0.9);
+    transition: all 3s ease;
 }
 
-.programmerede-piller-pink .pille-2{
+#pille-2{
     position: relative;
     bottom: 30px;
     rotate: 20deg;
     transform: scale(1.3);
 }
 
-.programmerede-piller-pink .pille-3{
+#pille-3{
     position: relative;
     left: 40px;
     top: 30px;
@@ -125,15 +128,15 @@ p{
     transform: scale(0.9);
 }
 
-.programmerede-piller-roed .pille-1{
+#pille-4{
     position: relative;
-    right: 10px;
-    top: 50px;
+    right: 25px;
+    top: 30px;
     rotate: 40deg;
     transform: scale(0.7);
 }
 
-.programmerede-piller-roed .pille-2{
+#pille-5{
     position: relative;
     right: 80px;
     top: 70px;
@@ -141,15 +144,15 @@ p{
     transform: scale(1);
 }
 
-.programmerede-piller-roed .pille-3{
+#pille-6{
     position: relative;
-    right: 30px;
+    right: 40px;
     top: 100px;
     rotate: 140deg;
     transform: scale(0.9);
 }
 
-.programmerede-piller-groen .pille-1{
+#pille-7{
     position: relative;
     left: 10px;
     top: 80px;
@@ -157,7 +160,7 @@ p{
     transform: scale(1.1);
 }
 
-.programmerede-piller-groen .pille-2{
+#pille-8{
     position: relative;
     left: 30px;
     top: 150px;
@@ -165,12 +168,20 @@ p{
     transform: scale(1.5);
 }
 
-.programmerede-piller-groen .pille-3{
+#pille-9{
     position: relative;
     right: 80px;
     top: 210px;
     rotate: 250deg;
     transform: scale(0.9);
+}
+
+#pille-10{
+    position: relative;
+    left: 60px;
+    top: 180px;
+    rotate: 5deg;
+    transform: scale(5);
 }
 
 /* -----gå videre-pile------ */
