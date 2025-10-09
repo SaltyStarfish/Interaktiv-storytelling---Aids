@@ -28,6 +28,6 @@ window.addEventListener("scroll", () => {
     // Flasken vælter for anden gang
     setTimeout(() => {
       medicinContainer.classList.add("phase2");
-    }, 2500);
+    }, 3000);
   }
 });
