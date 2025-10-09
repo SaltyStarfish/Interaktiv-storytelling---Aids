@@ -1,3 +1,4 @@
+
 const track = document.querySelector('.track');
 if (track) {
   const cards = [...track.querySelectorAll('.card')];
@@ -40,7 +41,7 @@ if (track) {
     const x = e.touches ? e.touches[0].clientX : e.clientX;
     const dx = x - lastX;
     track.scrollLeft = startLeft - (x - startX);
-    v = dx / (t - lastT);   // px/ms (lille momentum)
+    v = dx / (t - lastT);
     lastX = x; lastT = t;
     e.preventDefault();
   };
@@ -49,17 +50,13 @@ if (track) {
     if (!dragging) return;
     dragging = false;
     track.style.scrollBehavior = '';
-    // momentum: hop evt. et ekstra kort
     const base = indexFromScroll();
     const bump = Math.abs(v) > 0.4 ? (v < 0 ? 1 : -1) : 0;
     const target = Math.max(0, Math.min(cards.length - 1, base + bump));
     snapTo(target);
   };
 
-  track.addEventListener('mousedown', down);
-  window.addEventListener('mousemove', move, { passive:false });
-  window.addEventListener('mouseup',   up);
-
+  
   track.addEventListener('touchstart', down, { passive:true });
   window.addEventListener('touchmove', move, { passive:false });
   window.addEventListener('touchend',  up);
@@ -74,6 +71,7 @@ if (track) {
       c.style.zIndex    = String(100 - d);
     });
   };
+
   let ticking = false;
   track.addEventListener('scroll', () => {
     if (ticking) return;
