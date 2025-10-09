@@ -103,6 +103,13 @@ p{
     margin-bottom: 12px;
 }
 
+.svarmulighed:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
+
+
+
 .mereinfo-ikon{
     align-self: flex-end;
     background-color: rgba(0, 0, 0, 0.7);
@@ -129,6 +136,12 @@ p{
     z-index: 1; /* ligger "øverst" */
     justify-content: center; /* Centrerer indholdet vandret */
     align-items: center; /* Centrerer indholdet lodret */
+    opacity: 0;
+    transform: opacity 0.3s ease;
+}
+
+#dark-overlay.vis {
+  opacity: 1;
 }
 
 #feedback {
