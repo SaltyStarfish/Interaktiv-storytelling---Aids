@@ -14,7 +14,7 @@ window.addEventListener('click', unmuteVideo);
 window.addEventListener('keydown', unmuteVideo);
 
 
-// Scroll-event som ændrer pillernes placering
+// ----------------Scroll-event som ændrer pillernes placering----------------
 window.addEventListener('scroll', function() {
     // Hvor langt man er scrollet ned på siden (0 til 1)
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -35,11 +35,11 @@ window.addEventListener('scroll', function() {
     pille3.style.top = `${topValue3}px`;
     // pille-4
     const pille4 = document.getElementById('pille-4');
-    const topValue4 = 30 - ((100-30) * progress); // 30px -> -40px
+    const topValue4 = 30 - ((50-30) * progress); // 30px -> 10px
     pille4.style.top = `${topValue4}px`;
     // pille-5
     const pille5 = document.getElementById('pille-5');
-    const topValue5 = 70 - ((100-70) * progress); // 70px -> 40px
+    const topValue5 = 70 - ((80-70) * progress); // 70px -> 60px
     pille5.style.top = `${topValue5}px`;
     // pille-6
     const pille6 = document.getElementById('pille-6');
@@ -51,7 +51,7 @@ window.addEventListener('scroll', function() {
     pille7.style.top = `${topValue7}px`;
     // pille-8
     const pille8 = document.getElementById('pille-8');
-    const topValue8 = 180 - ((180-150) * progress); // 180px -> 150px
+    const topValue8 = 150 + ((180-150) * progress); // 150px -> 180px
     pille8.style.top = `${topValue8}px`;
     // pille-9
     const pille9 = document.getElementById('pille-9');

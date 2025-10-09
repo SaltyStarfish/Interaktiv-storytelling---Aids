@@ -181,6 +181,7 @@ p{
     top: 180px;
     rotate: 5deg;
     transform: scale(5);
+    opacity: 0;
 }
 
 /* -----gå videre-pile------ */
