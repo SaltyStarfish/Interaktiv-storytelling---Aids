@@ -174,7 +174,6 @@ p {
 
 
 
-/* START: skjult + lidt nede */
 .fadebox{
     opacity: 0;
     transform: translateY(20px);
@@ -182,7 +181,6 @@ p {
   
 }
 
-/* VIS: når JS tilføjer .visible */
 .fadebox.visible{
     opacity: 1;
     transform: translateY(0);
