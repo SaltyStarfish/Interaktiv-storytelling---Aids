@@ -1,20 +1,33 @@
 body {
-  background: url('assets/baggrund.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 1rem;
-  width: 390px;        
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.app-container {
+  width: 390px;
+  height: 100%;
+  background-image: url('../assets/baggrund.png');
+  background-repeat: repeat-y;
+  background-size: contain;  
+  background-position: top;
+  padding: 25px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
 }
 
 .container {
   width: 317px;  
-  background: #EEEAE5;;
+  background: #EEEAE5;
   border-radius: 16px;
   padding: 1rem;
   position: relative;
-  overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
@@ -132,7 +145,7 @@ h2 {
   width: auto;
   max-width: 80%;
   min-width: 150px;
-  min-height: 140px;
+  min-height: 155px;
   top: 10%;
   left: 50%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
