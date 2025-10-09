@@ -145,63 +145,42 @@ body {
     margin-top: auto;
     font-size: 14px;
     font-weight: bold;
+    font-family: "Nokora", Arial, Helvetica, sans-serif;
     width: 85%;
+    border: none;
+    outline: none;
 }
 
 /*karusel*/
 
-
-.carousel {
-    width: 340px;             
-    margin: 0 auto;
-    perspective: 1200px
-}
-/*
-.track {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 100%;
-    gap: 5px;
-    justify-items: center;          
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    padding: 16px 0 24px; 
-}
-
-.track::-webkit-scrollbar { display: none; }
-.track { scrollbar-width: none; }
-*/
-
 :root {
-  --card-width: 280px;  /* kort-bredde */
-  --gap: 16px;          /* afstand mellem kort */
+    --card-width: 280px;  
+    --gap: 16px;          
 }
 
 .carousel { 
     width: 100%; 
     overflow: hidden; 
     width: 340px;             
-  margin: 20px auto 0; /* ← øg det første tal for mere afstand fra toppen */
-  perspective: 1200px;
+    margin: 20px auto 0; 
+    perspective: 1200px;
 }
 
 .track {
-  display: flex;
-  gap: var(--gap);
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scroll-padding: 0 calc((100% - var(--card-width)) / 2);
-  padding: 0 calc((100% - var(--card-width)) / 2 + 15px); 
+    display: flex;
+    gap: var(--gap);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-padding: 0 calc((100% - var(--card-width)) / 2);
+    padding: 0 calc((100% - var(--card-width)) / 2 + 15px); 
 }
 .track::-webkit-scrollbar { display: none; }
 .track { scrollbar-width: none; }
 
 .card {
-  flex: 0 0 var(--card-width); 
-  scroll-snap-align: center;  
-  transition: transform .3s ease, opacity .3s ease;
+    flex: 0 0 var(--card-width); 
+    scroll-snap-align: center;  
+    transition: transform .3s ease, opacity .3s ease;
 }
