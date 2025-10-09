@@ -16,5 +16,5 @@ overlay.addEventListener('click', () => {
 
 // Når videoen er færdig, skift til næste side
 video.addEventListener('ended', () => { // Brug 'ended' event for at sikre, at videoen er færdig
-    window.location.href = 'forside.html'; // Skift til næste side
+    window.location.href = 'startside.html'; // Skift til næste side
 });
