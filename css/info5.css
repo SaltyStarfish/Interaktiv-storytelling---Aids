@@ -61,9 +61,9 @@ h1{
 
 .medicin-container {
   position: relative;
-  width: 150px;
-  height: 150px;
-  margin-right: 100px;
+  width: 130px;
+  height: 130px;
+  margin-right: 180px;
 }
 
 .medicin-og-piller {
@@ -79,14 +79,14 @@ h1{
   display: flex;
 }
 
-/* flaske vælter til venstre */
+/* flaske vælter til højre */
 .medicin-container.active .medicin-og-piller {
-  transform: rotate(65deg);
+  transform: rotate(50deg);
 }
 
 /* flaske vælter igen, nu på hovedet */
 .medicin-container.phase2 .medicin-og-piller {
-  transform: rotate(235deg);
+  transform: rotate(200deg);
 }
 
 .pille {
@@ -100,13 +100,13 @@ h1{
 .foerste-piller {
   position: absolute;
   top: 5px;
-  left: 60px;
+  left: 50px;
 }
 
 .naeste-piller {
   position: absolute;
-  top: 0px;
-  left: 55px;
+  top: -120px;
+  left: 25px;
 }
 
 /* Første hold piller (aktiveres ved .active) */
@@ -116,33 +116,33 @@ h1{
 
 /* Andet hold piller (aktiveres ved .phase2) */
 .medicin-container.phase2 .pille.senere {
-  animation: pillerUd2 2s ease-out forwards;
+  animation: pillerUd2 1.5s ease-out forwards;
 }
 
 @keyframes pillerUd1 {
   0%   { opacity: 0; transform: translate(0,0) rotate(0deg); }
   15%  { opacity: 1; }
-  100% { transform: translate(-90px, -40px) rotate(-140deg); opacity: 1; }
+  100% { transform: translate(40px, -60px) rotate(200deg); opacity: 1; }
 }
 
 @keyframes pillerUd2 {
   0%   { opacity: 0; transform: translate(0,0) rotate(0deg); }
   15%  { opacity: 1; }
-  100% { transform: translate(20px, 100px) rotate(220deg); opacity: 1; }
+  100% { transform: translate(40px, 90px) rotate(200deg); opacity: 1; }
 }
 
 /* Variation i piller */
-#pille1 { left: 60px; animation-delay: 0.20s; transform: rotate(deg); }
-#pille2 { left: 70px; animation-delay: 0.35s; transform: rotate(-12deg); }
-#pille3 { left: 80px; animation-delay: 0.50s; transform: rotate(18deg); }
-#pille4 { left: 90px; animation-delay: 0.65s; transform: rotate(-6deg); }
-#pille5 { left:100px; animation-delay: 0.80s; transform: rotate(6deg); }
+#pille1 { animation-delay: 0.1s; transform: rotate(-5deg); }
+#pille2 { animation-delay: 0.25s; transform: rotate(8deg); }
+#pille3 { animation-delay: 0.4s; transform: rotate(-12deg); }
+#pille4 { animation-delay: 0.55s; transform: rotate(5deg); }
+#pille5 { animation-delay: 0.7s; transform: rotate(-8deg); }
 
-#pille6 { left: 55px; animation-delay: 0.2s; transform: rotate(10deg); }
-#pille7 { left: 70px; animation-delay: 0.4s; transform: rotate(-15deg); }
-#pille8 { left: 85px; animation-delay: 0.6s; transform: rotate(5deg); }
-#pille9 { left: 100px; animation-delay: 0.8s; transform: rotate(-5deg); }
-#pille10 { left: 115px; animation-delay: 1.0s; transform: rotate(12deg); }
+#pille6 { animation-delay: 0.2s; transform: rotate(10deg); }
+#pille7 { animation-delay: 0.4s; transform: rotate(-15deg); }
+#pille8 { animation-delay: 0.6s; transform: rotate(5deg); }
+#pille9 { animation-delay: 0.8s; transform: rotate(-5deg); }
+#pille10 { animation-delay: 1.0s; transform: rotate(12deg); }
 
 .pil {
   display: flex;
