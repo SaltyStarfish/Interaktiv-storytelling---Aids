@@ -15,15 +15,19 @@
 <body>
   <div class="app-container">
     <div class="container">
+      <!-- Sektion hvor brugeren kan trykke på ikoner for at læse mere om emnet -->
       <section class="smitter">
         <h3>HIV kan smitte gennem:</h3>
         <p>Tryk på ikonerne, og læs mere.</p>
 
+        <!-- Class "ikoner" bruges til at kunne skabe et grid med klikbare ikoner -->
         <div class="ikoner">
+          <!-- Hvert enkelt ikon består af et billede, tekst og skjult popup-boks -->
           <div class="ikon">
             <img src="assets/ubeskyttetblob.svg" alt="ubeskyttet sex">
             <p>Ubeskyttet<br>sex</p>
 
+            <!-- Popup-vinduet vises, når der trykkes på ikonet, og det kan lukkes med x-knappen -->
             <div class="popup">
               <button class="luk">X</button>
               <p><strong>Ubeskyttet sex</strong> er den førende årsag til HIV, og står for <strong>70–80% af nye
@@ -103,7 +107,7 @@
         </div>
       </section>
 
-        <!-- Navigation -->
+        <!-- Navigation til forrige og næste side -->
         <div class="pil">
           <a href="info1.html"><img src="assets/pil-venstre.svg" alt="Gå tilbage"></a>
           <a href="question2.html"><img src="assets/pil-højre.svg" alt="Gå frem"></a>
