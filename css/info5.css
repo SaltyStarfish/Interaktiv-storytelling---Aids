@@ -17,15 +17,15 @@ h1{
 }
 
 .app-container {
-  width: 390px;
+  width: 390px; /* Fast bredde for mobilvisning */
   background-image: url('../assets/baggrund.png');
-  background-repeat: repeat-y;
-  background-size: contain;  
-  background-position: top;
-  margin: 0 auto;
+  background-repeat: repeat-y; /* Baggrund gentages vertikalt */
+  background-size: contain; /* Baggrund skaleres til at passe inden for containeren */
+  background-position: top; /* Baggrund placeres øverst */
+  margin: 0 auto; /* Centrerer containeren horisontalt */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Elementer stables vertikalt */
+  align-items: center; /* Centrerer elementer horisontalt */
   padding-bottom: 40px;
 }
 
@@ -55,16 +55,16 @@ h1{
   width: 100%;
   max-width: 390px;
   height: auto;
-  object-fit: cover;
+  object-fit: cover; /* Bevarer videoens proportioner */
   margin-top: 15px;
   display: block;
 }
 
 .medicin-container {
-  position: relative;
+  position: relative; /* For at kunne placere de 'absolute'-positionerede piller inden i den */
   width: 130px;
   height: 130px;
-  margin-right: 180px;
+  margin-right: 180px; /* Placeres langt til højre, så den ikke er i vejen for teksten */
   margin-bottom: 20px;
 }
 
@@ -72,8 +72,8 @@ h1{
   position: relative;
   width: 100%;
   height: 100%;
-  transform-origin: bottom center;
-  transition: transform 1.5s ease-out;
+  transform-origin: bottom center; /* Rotationspunkt ved bunden af flasken */
+  transition: transform 1.5s ease-out; /* Glidende overgang ved rotation */
 }
 
 #medicinflaske {
@@ -81,7 +81,7 @@ h1{
   display: flex;
 }
 
-/* flaske vælter til højre */
+/* flaske vælter første gang */
 .medicin-container.active .medicin-og-piller {
   transform: rotate(50deg);
 }
@@ -96,7 +96,7 @@ h1{
   width: 20px; 
   opacity: 0;
   transform: translate(0,0) rotate(0deg);
-  transition: opacity 0.3 ease;;
+  transition: opacity 0.3 ease; /* Glidende fade-in */
 }
 
 .foerste-piller {
@@ -121,19 +121,19 @@ h1{
   animation: pillerUd2 1.5s ease-out forwards;
 }
 
-@keyframes pillerUd1 {
+@keyframes pillerUd1 { /* Animation for første hold piller */
   0%   { opacity: 0; transform: translate(0,0) rotate(0deg); }
   15%  { opacity: 1; }
   100% { transform: translate(40px, -60px) rotate(200deg); opacity: 1; }
 }
 
-@keyframes pillerUd2 {
+@keyframes pillerUd2 { /* Animation for andet hold piller */
   0%   { opacity: 0; transform: translate(0,0) rotate(0deg); }
   15%  { opacity: 1; }
   100% { transform: translate(40px, 90px) rotate(200deg); opacity: 1; }
 }
 
-/* Variation i piller */
+/* Variation i piller for en mere naturlig effekt */
 #pille1 { animation-delay: 0.1s; transform: rotate(-5deg); }
 #pille2 { animation-delay: 0.25s; transform: rotate(8deg); }
 #pille3 { animation-delay: 0.4s; transform: rotate(-12deg); }
@@ -147,8 +147,8 @@ h1{
 #pille10 { animation-delay: 1.0s; transform: rotate(12deg); }
 
 .pil {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  display: flex; /* pile placeres ved siden af hinanden */
+  justify-content: space-between; /* jævn fordeling af pile */
+  width: 100%; /* fylder hele bredden af containeren */
   padding: 20px 15px 40px 15px;
 }

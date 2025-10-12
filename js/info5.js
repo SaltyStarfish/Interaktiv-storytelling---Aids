@@ -6,16 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // Starter lyden
   const enableAudio = () => {
     firstVideo.muted = false; // Slår lyden til (mute slås fra)
-    firstVideo.play().catch(() => {}); // Forsøger at starte videoen igen efter interaktion fra bruger
+    firstVideo.play().catch(() => {}); // Forsøger at starte videoen (ignorerer fejl)
   };
 
-  // Aktiver lyd ved første interaktion
+  // Aktiver lyd ved brugerens første interaktion
   window.addEventListener('pointerdown', enableAudio, true);
   window.addEventListener('touchstart', enableAudio, true);
   window.addEventListener('keydown', enableAudio, true);
 });
 
-// Medicinflaske
+// Medicinflaske vælter ved scroll
 
 window.addEventListener("scroll", () => {
   const medicinContainer = document.querySelector(".medicin-container");
