@@ -36,6 +36,7 @@ h1{
 
 .fakta {
     color: white;
+    background: rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
 
