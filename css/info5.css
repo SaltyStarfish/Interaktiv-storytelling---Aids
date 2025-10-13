@@ -10,6 +10,10 @@ h1{
   font-family:"Nokora", Arial, Helvetica, sans-serif;
 }
 
+h2 {
+  text-align: center;
+}
+
 .startpil {
   font-size: 30px;
   color: #FFFFFF;
