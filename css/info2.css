@@ -1,3 +1,4 @@
+/* Alt indholdet centreres på skærmen */
 body {
   margin: 0;
   padding: 0;
@@ -5,27 +6,22 @@ body {
   justify-content: center;
 }
 
+/* Den overordnede container, der definerer bredde og højde (mobilvisning) og baggrund */
 .app-container {
   width: 390px;
   min-height: 100vh;
   background-image: url('../assets/baggrund.png');
-  background-repeat: repeat-y; 
-  background-position: top;
-  background-size: auto;
-  z-index: 10;
+  background-repeat: repeat-y; /* gentager baggrunden vertikalt */
+  background-position: top; /* starter baggrundsbilledet fra toppen */
   padding: 25px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 40px;
 }
 
 .container {
-  width: 340px;  
+  width: 340px; /* Gør containeren lidt smallere end app-containeren, så baggrunden stadig kan ses */  
   background: #EEEAE5;
   padding: 1rem;
-  position: relative;
+  position: relative; /* bruges for at positionere popups relativt hertil */
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
@@ -113,59 +109,61 @@ h2 {
   text-align: left;
 }
 
+/* Grid benyttes til at arrangere ikonerne i to kolonner */
 .ikoner {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  justify-items: center;
-  margin: 1rem;
-  text-align: center;
+  grid-template-columns: repeat(2, 1fr); /* Grid'et opdeles i to lige bredde kolonner */
+  gap: 1rem; /* Afstand mellem rækker og kolonner */
+  justify-items: center; /* Centrerer ikonerne i hver kolonne */
+  margin: 1rem; /* Skaber luft omkring grid'et */
+  text-align: center; /* Centrerer teksten under ikonerne */
 }
 
 .ikon:nth-child(3) {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 2; /* Får det tredje ikon til at strække sig over begge kolonner */
   justify-self: center;
 }
 
 .ikon { 
-  position: relative; 
-  display: inline-block; 
-  cursor: pointer; 
+  position: relative; /* Gør det muligt at placere popups relativt hertil */
+  display: inline-block; /* Tekst og ikon bliver til en samlet blok */
+  cursor: pointer; /* Har ingen visuel effekt på det tiltænkte mobilformat, men for at gøre det tydeligt, at ikonet kan klikkes på, og da det er best practice */
 }
 
 .popup {
-  display: none;
-  position: absolute;
-  transform: translate(-50%);
-  background: #fff;
+  display: none; /* Skjuler popup-vinduet som standard */
+  position: absolute; /* Absolut positionering i forhold til .ikon-containerne */
+  transform: translate(-50%); /* Centrerer popup-vinduet horisontalt */
+  background: #fff; 
   border-radius: 12px;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1.5rem; /* Indvendig afstand */
   width: auto;
   max-width: 80%;
   min-width: 155px;
   min-height: 160px;
-  top: 10%;
-  left: 50%;
+  top: 10%; /* Placerer popup-vinduet lidt under ikonet */
+  left: 50%; /* Centrerer popup-vinduet horisontalt */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  z-index: 10;
+  z-index: 10; /* Sørger for at popup-vinduet vises over andre elementer */
 }
 
+/* Gør popup-vinduet synligt, når .active tilføjes via JavaScript */
 .popup.active { 
   display: block; 
 }
 
 .popup .luk {
-  position: absolute;
+  position: absolute; /* Placerer luk-knappen i hjørnet af popup'en */
   top: 5px;
   right: 8px;
-  background: none; 
-  border: none; 
+  background: none; /* fjerner standardbaggrunden */
+  border: none; /* fjerner standardkanten omkring x'et */
   cursor: pointer;
 }
 
 .pil {
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* Containeren gøres til en flexbox, så pilene placeres på en række */
+  justify-content: space-between; /* Placerer pilene i hver sin ende af containeren */
   width: 100%;
-  padding: 20px 15px 40px 15px;
+  padding: 20px 15px 40px 15px; /* Tilføjer lidt afstand omkring pilene */
 }
